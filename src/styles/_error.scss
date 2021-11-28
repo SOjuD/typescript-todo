@@ -1,0 +1,20 @@
+.movies_error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+
+  * {
+    color: $white;
+  }
+
+  h2 {
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-weight: 300;
+  }
+}
