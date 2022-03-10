@@ -11,10 +11,10 @@ const MoviesList = () => {
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        if(!list.length){
+        if(!list.length && !error){
             dispatch(getMovies());
         }
-    }, [loading, list, dispatch])
+    }, [loading, list, dispatch, error])
 
     return (
         <article className='movies_list'>
